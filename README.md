@@ -13,5 +13,7 @@ A comprehensive collection of tools and utilities for working with OpenAI models
 - **Embeddings**: Context similarity utilities for retrieval-augmented generation (RAG) and more.
   - embedding.py
 
-## TODOs:
+
+
+### TODOs:
 - Add library support.
