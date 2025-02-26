@@ -1,12 +1,11 @@
 # OpenAI-Toolbox
-A collection of tools and utilities for working with OpenAI models and APIs.
-OpenAI-Toolbox repo contains the following utilites/methods/classes for different use-cases.
-  - Text generation / Instruction model API
-  - Image generation from prompt, modifying an existing image, creating variations of an image
-  - Omni model utilities for Vision and STT, TTS
-  - Discrete STT, TTS for transcribing & voice-over
-  - Moderation class for advanced safety and alignment use cases
-  - Embedding model usage for context similarity
+A comprehensive collection of tools and utilities for working with OpenAI models and APIs. The repository includes various methods and classes for different use cases, such as:
+  -Text Generation: *Utilities for working with instruction-based models.*
+  -Image Generation: *Generate images from prompts, modify existing images, and create variations.*
+  -Omni Model Utilities: *Support for vision, speech-to-text (STT), and text-to-speech (TTS).*
+  -Discrete STT & TTS: *Tools for transcription and voice-over.*
+  -Moderation: *Advanced safety and alignment mechanisms.*
+  -Embeddings: *Context similarity utilities for retrieval-augmented generation (RAG) and more.*
 ---
 TODOs:
 - add lib support
