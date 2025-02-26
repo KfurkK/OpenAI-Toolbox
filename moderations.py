@@ -4,6 +4,7 @@ from openai import OpenAI
 from urllib.parse import urlparse
 
 class Moderation:
+
     def __init__(self, api_key):
         self.client = OpenAI(api_key=api_key)
 
