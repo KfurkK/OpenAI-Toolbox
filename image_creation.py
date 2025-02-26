@@ -105,13 +105,10 @@ if __name__ == "__main__":
     imager = Image(api_key=api_key)
     # Example of creating an image from scratch
     response = imager.create_from_scratch(prompt="A futuristic cityscape at night", model="dall-e-3", num_generations=2)
-    print("Create from scratch response:\n", response)
 
     # Example of creating variations of an existing image
-    #response = imager.create_variations_image(image_path="D:/misc/opai/new-york-city-skyline.png", num_variations=3)
-    #print("Create variations response:", response)
-
+    response = imager.create_variations_image(image_path="path/to/file.png", num_variations=3)
+    
     # Example of manipulating an image
-    #response = imager.manipulate(prompt="Add fireworks in the sky", src_path="D:/misc/opai/new-york-city-skyline.png", num_generations=1)
-    #print("Manipulate image response:", response)
-    #print(response)
+    response = imager.manipulate(prompt="Add fireworks in the sky", src_path="path/to/file.png", num_generations=1)
+    
