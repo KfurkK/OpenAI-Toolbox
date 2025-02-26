@@ -2,9 +2,6 @@ import os
 import numpy as np
 from openai import OpenAI
 
-
-client = OpenAI()
-
 def cosine_similarity(embedding1: np.ndarray, embedding2: np.ndarray) -> float:
     """
     Computes the cosine similarity between two embedding vectors.
@@ -43,9 +40,11 @@ def get_embedding(text: str, model: str = "text-embedding-ada-002") -> np.ndarra
         return np.array([])
 
 if __name__ == "__main__":
+    
+    client = OpenAI()
     # Example usage
-    text1 = "Air is sunny"
-    text2 = "President Obama"
+    text1 = "Air seems to be sunny."
+    text2 = "Food was delicious!"
     
     embedding1 = get_embedding(text1)
     embedding2 = get_embedding(text2)
