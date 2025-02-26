@@ -121,10 +121,6 @@ class Audio:
 
 # Usage
 if __name__ == "__main__":
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError("OPENAI_API_KEY environment variable not set")
-
     os.makedirs("voiceovers", exist_ok=True)
     script_dir = os.path.dirname(os.path.abspath(__file__))  # Get the script's directory
     output_path = os.path.join(script_dir, "voiceovers/output.mp3")  # Create full path
