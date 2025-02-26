@@ -2,7 +2,6 @@ import os
 from datetime import datetime
 from openai import OpenAI
 
-client = OpenAI()
 
 class AIChatbot:
     def __init__(self, model="gpt-4o", history_file="gecmis.txt"):
@@ -78,12 +77,14 @@ class AIChatbot:
         return {"response": response}
 
 
-chatbot = AIChatbot()
+if __name__ == "__main__":
+    client = OpenAI()
+    chatbot = AIChatbot()
 
-# Interactive mode
-while True:
-    user_input = input("> ")
-    structured = "structured:" in user_input
-    predicted = "predicted:" in user_input
-    response = chatbot.get_response(user_input, structured_output=structured, predict_output=predicted)
-    print(response)
+    # Interactive mode
+    while True:
+        user_input = input("> ")
+        structured = "structured:" in user_input
+        predicted = "predicted:" in user_input
+        response = chatbot.get_response(user_input, structured_output=structured, predict_output=predicted)
+        print(response)
