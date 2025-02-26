@@ -1,5 +1,4 @@
 import os
-os.environ["OPENAI_API_KEY"] = "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"
 from openai import OpenAI
 import base64
 import requests

@@ -2,10 +2,7 @@ import os
 import numpy as np
 from openai import OpenAI
 
-# Set OpenAI API key securely
-os.environ["OPENAI_API_KEY"] ="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"  # Replace with your actual key
 
-# Initialize OpenAI client
 client = OpenAI()
 
 def cosine_similarity(embedding1: np.ndarray, embedding2: np.ndarray) -> float:
